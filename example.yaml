@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-sample-app
+  description: A sample application component for testing orchestrator workflows
+  annotations:
+    orchestrator.io/workflows: '["greeting"]'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guest
